@@ -1,0 +1,29 @@
+{% extends "/layout/main.html" %}  
+
+ {% block body %}
+          <div class="row">
+               <div class="col-4 offset-4">
+                    <div class="card">
+                         <img class="card-img-top" src="https://i.pinimg.com/originals/87/4f/00/874f00b0e6a9f0c905433bf6d3b50979.jpg" alt="Card image cap">
+                         <div class="card-body">
+                           <h5 class="">ID {{ vote['id' ]}}</h5>
+                           <p class="card-text">Value: {{ vote['value' ]}}</p>
+                           <p class="card-text">Image: {{ vote['image_id' ]}}</p>
+                           <p class="card-text">User: {{ vote['sub_id' ]}}</p>
+                           <p class="card-text">Create At:: {{ vote['created_at' ]}}</p>
+                           <p class="card-text">Country: {{ vote['country_code' ]}}</p>
+                           <a href="/" class="btn btn-primary">Go back</a>
+                         </div>
+                       </div>
+
+               </div>
+
+          </div>
+   
+            
+ {% endblock %}
+
+
+
+
+     

@@ -1,0 +1,29 @@
+{% extends "/layout/main.html" %}
+
+
+{% block body %}
+
+<center><h1>LikecaT</h1></center>
+<div class="column">
+     <div class="col-4 offset-4">
+          <div class="card">
+               <img class="card-img-top" src="https://pm1.narvii.com/7529/1d3738e817431e49c7719af361848714dbaa6700r1-630-378v2_hq.jpg" alt="Card image cap">
+               
+          </div>
+    </div>
+
+</div>
+<form method="POST" action="/login" >
+     <div class="form-group">
+       <label for="username">Username</label>
+       <input type="text" class="form-control" id="username" name="username">
+     </div>
+      <div class="form-group">
+          <label for="password">Password</label>
+          <input type="password" class="form-control" id="password" name="password">
+      </div>
+
+    <button type="submit" class="btn btn-primary" name="Login">Submit</button>
+ </form>
+ 
+{% endblock %}
